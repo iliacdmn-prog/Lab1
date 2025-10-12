@@ -1,0 +1,305 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#Labs\\Lab1\\Task2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\csvprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\csvprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\xlsxprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\xlsxprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|d:\\c#labs\\lab1\\task2\\domain\\cityairquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|solutionrelative:domain\\cityairquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|D:\\C#Labs\\Lab1\\Task2\\task2\\importpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|solutionrelative:task2\\importpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|d:\\c#labs\\lab1\\task2\\task2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|solutionrelative:task2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|d:\\c#labs\\lab1\\task2\\task2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|solutionrelative:task2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|d:\\c#labs\\lab1\\task2\\domain\\monthlyaqi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|solutionrelative:domain\\monthlyaqi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|d:\\c#labs\\lab1\\task2\\domain\\cityairqualitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F04BDE2-289F-43B7-9CB7-A2C1F1849BA6}|Domain\\Domain.csproj|solutionrelative:domain\\cityairqualitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|d:\\c#labs\\lab1\\task2\\task2\\importpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|solutionrelative:task2\\importpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\jsonprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\jsonprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\reports\\xlsxreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\reports\\xlsxreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\reports\\docxreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\reports\\docxreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\textprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\textprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\iprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\iprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|d:\\c#labs\\lab1\\task2\\data\\providers\\xmlprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F77AAB-6E17-4B0E-8262-005333B3E9EE}|Data\\Data.csproj|solutionrelative:data\\providers\\xmlprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|d:\\c#labs\\lab1\\task2\\task2\\importpreview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EDE708-A2D4-4651-A4D7-C66615BFCDAE}|Task2\\UI.csproj|solutionrelative:task2\\importpreview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XlsxProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\XlsxProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\XlsxProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\XlsxProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\XlsxProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:46:51.651Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CsvProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\CsvProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\CsvProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\CsvProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\CsvProvider.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAFkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T08:09:25.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CityAirQuality.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Domain\\CityAirQuality.cs",
+              "RelativeDocumentMoniker": "Domain\\CityAirQuality.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Domain\\CityAirQuality.cs",
+              "RelativeToolTip": "Domain\\CityAirQuality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T18:36:07.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CityAirQualityManager.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Domain\\CityAirQualityManager.cs",
+              "RelativeDocumentMoniker": "Domain\\CityAirQualityManager.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Domain\\CityAirQualityManager.cs",
+              "RelativeToolTip": "Domain\\CityAirQualityManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAMwBIAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:59:54.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Task2\\MainForm.cs",
+              "RelativeDocumentMoniker": "Task2\\MainForm.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Task2\\MainForm.cs",
+              "RelativeToolTip": "Task2\\MainForm.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAADwv/AAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T08:06:26.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Task2\\MainForm.cs",
+              "RelativeDocumentMoniker": "Task2\\MainForm.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Task2\\MainForm.cs [Design]",
+              "RelativeToolTip": "Task2\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T10:35:58.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImportPreview.cs [Design]",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.cs",
+              "RelativeDocumentMoniker": "Task2\\ImportPreview.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.cs [Design]",
+              "RelativeToolTip": "Task2\\ImportPreview.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T19:40:35.482Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImportPreview.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.cs",
+              "RelativeDocumentMoniker": "Task2\\ImportPreview.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.cs",
+              "RelativeToolTip": "Task2\\ImportPreview.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T08:46:35.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MonthlyAQI.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Domain\\MonthlyAQI.cs",
+              "RelativeDocumentMoniker": "Domain\\MonthlyAQI.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Domain\\MonthlyAQI.cs",
+              "RelativeToolTip": "Domain\\MonthlyAQI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T18:36:12.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JsonProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\JsonProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\JsonProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\JsonProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\JsonProvider.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:46:58.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XlsxReportService.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Reports\\XlsxReportService.cs",
+              "RelativeDocumentMoniker": "Data\\Reports\\XlsxReportService.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Reports\\XlsxReportService.cs",
+              "RelativeToolTip": "Data\\Reports\\XlsxReportService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T17:48:55.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DocxReportService.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Reports\\DocxReportService.cs",
+              "RelativeDocumentMoniker": "Data\\Reports\\DocxReportService.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Reports\\DocxReportService.cs",
+              "RelativeToolTip": "Data\\Reports\\DocxReportService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T17:48:57.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TextProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\TextProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\TextProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\TextProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\TextProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:46:55.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\IProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\IProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\IProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\IProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:47:01.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "XmlProvider.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\XmlProvider.cs",
+              "RelativeDocumentMoniker": "Data\\Providers\\XmlProvider.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Data\\Providers\\XmlProvider.cs",
+              "RelativeToolTip": "Data\\Providers\\XmlProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:46:47.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ImportPreview.Designer.cs",
+              "DocumentMoniker": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.Designer.cs",
+              "RelativeDocumentMoniker": "Task2\\ImportPreview.Designer.cs",
+              "ToolTip": "D:\\C#Labs\\Lab1\\Task2\\Task2\\ImportPreview.Designer.cs",
+              "RelativeToolTip": "Task2\\ImportPreview.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T08:46:43.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 178,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
