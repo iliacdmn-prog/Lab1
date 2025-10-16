@@ -216,35 +216,27 @@
 - Контрольні приклади:
 CSV
 
-<img width="1213" height="763" alt="image" src="https://github.com/user-attachments/assets/d1ad175f-c460-4ebc-a37e-8fe1e4207331" />
-
-<img width="713" height="531" alt="image-1" src="https://github.com/user-attachments/assets/e4c35236-f344-45d1-b9c4-f605db40de1d" />
-
-<img width="625" height="748" alt="image-2" src="https://github.com/user-attachments/assets/8efb8a21-7005-4a8b-8321-f3db8fc43898" />
+<img width="802" height="482" alt="image" src="https://github.com/user-attachments/assets/05d4c1ad-2fc3-45b7-8a8d-7ad9e7296c6a" />
+<img width="611" height="484" alt="image" src="https://github.com/user-attachments/assets/9172c286-21bf-45bb-925e-002b37f8b81a" />
+<img width="661" height="729" alt="image" src="https://github.com/user-attachments/assets/4079149e-3900-477b-b62e-ec5dd189e851" />
 
 JSON
 
-<img width="1213" height="763" alt="image-3" src="https://github.com/user-attachments/assets/bc6d394e-40b9-4c4e-8ce2-ca1941317310" />
-
-<img width="713" height="531" alt="image-4" src="https://github.com/user-attachments/assets/21e71336-7465-4518-baf1-c0052bd67c2f" />
-
-<img width="348" height="672" alt="image-5" src="https://github.com/user-attachments/assets/9698a72c-d354-48ba-8aa4-654af75a4783" />
+<img width="802" height="482" alt="image" src="https://github.com/user-attachments/assets/da21cefc-3422-4611-bfac-d61b99b93b02" />
+<img width="611" height="484" alt="image" src="https://github.com/user-attachments/assets/ec023a0a-d76d-4ac2-bc96-e8516e466179" />
+<img width="309" height="675" alt="image" src="https://github.com/user-attachments/assets/e449d56d-fff3-406a-bcbf-51f6b7ea59cb" />
 
 XML
 
-<img width="1213" height="763" alt="image-6" src="https://github.com/user-attachments/assets/c1b44aae-5bc4-4c7e-8a2e-5aaeadae002d" />
-
-<img width="713" height="531" alt="image-7" src="https://github.com/user-attachments/assets/797c53bd-31d2-42a6-8e5f-8c86e9c9d6da" />
-
-<img width="662" height="895" alt="image-8" src="https://github.com/user-attachments/assets/c328c756-dfc3-495c-80e6-b4c62ff6b0df" />
+<img width="802" height="482" alt="image" src="https://github.com/user-attachments/assets/ad28d56b-da53-4460-9832-79dae50f8355" />
+<img width="611" height="484" alt="image" src="https://github.com/user-attachments/assets/e4d4963e-f8fe-4872-a459-4a065009e39e" />
+<img width="546" height="829" alt="image" src="https://github.com/user-attachments/assets/0e6f540b-abf9-4e53-a417-9c7bbd680a0b" />
 
 XLSX
 
-<img width="1213" height="763" alt="image-9" src="https://github.com/user-attachments/assets/6f71ed1e-a5e8-4db3-9e82-0144dfa1b3a6" />
-
-<img width="713" height="531" alt="image-10" src="https://github.com/user-attachments/assets/449583ce-c344-4079-800c-1ee283cfb7e6" />
-
-<img width="1003" height="705" alt="image-11" src="https://github.com/user-attachments/assets/3d5f4711-cfbb-451c-a4f8-b5f4e310fdf0" />
+<img width="802" height="482" alt="image" src="https://github.com/user-attachments/assets/63bcd1df-add8-4614-9214-14cd5cc4c1ac" />
+<img width="611" height="484" alt="image" src="https://github.com/user-attachments/assets/926f9158-0618-420c-bbba-6f24bd7b9259" />
+<img width="1232" height="634" alt="image" src="https://github.com/user-attachments/assets/f30d1858-ae87-45ae-acc2-18a35ff4fda9" />
 
 ---
 
@@ -257,13 +249,12 @@ XLSX
 - **Умовне форматування:** Top 3 міста за Average AQI виділені кольором
 - **Стилізація:** Сірий фон заголовків, жирний шрифт, авто-ширина стовпців
 
-<img width="422" height="806" alt="image-12" src="https://github.com/user-attachments/assets/551dee79-a07a-4263-8210-1cff30d85100" />
+<img width="565" height="811" alt="image" src="https://github.com/user-attachments/assets/ef9d98cb-bd50-4813-8b65-234fa1234714" />
 
 **Аркуш Charts:**
 - Містить кругову діаграму з AverageAQI по містам для кожної країни
 
-<img width="951" height="811" alt="image-13" src="https://github.com/user-attachments/assets/587bafe0-a217-4355-8e4b-1c30a49e656e" />
-
+<img width="860" height="810" alt="image" src="https://github.com/user-attachments/assets/eb6236b4-9494-4ae8-9d9e-c4bd4654d540" />
 
 ### 8.2 DOCX-звіт
 **Структура:**
@@ -287,10 +278,9 @@ XLSX
    - Топ-5 найзабрудненіших і найчистіших міст.
    - Кількість міст із добрим / поганим повітрям за пороговими значеннями.
 
-<img width="694" height="921" alt="image" src="https://github.com/user-attachments/assets/84f92df3-cd01-47dc-ab16-f56d518d92be" />
+<img width="691" height="918" alt="image" src="https://github.com/user-attachments/assets/abaed622-33be-48a0-a439-5bc85f1637db" />
 
-<img width="692" height="919" alt="image" src="https://github.com/user-attachments/assets/9e09e2f5-be67-4154-8fca-1ea70e93730e" />
-
+<img width="694" height="918" alt="image" src="https://github.com/user-attachments/assets/15bb7d6f-e6fd-4efe-9923-b8046c12d98d" />
 
 ## 9. Візуалізація
 
@@ -330,7 +320,6 @@ XLSX
 
 <img width="802" height="482" alt="image-17" src="https://github.com/user-attachments/assets/6e9a9790-c0f6-404c-a570-facf75604da5" />
 
-
 **Експорт у PNG:**
    - Є можливість екпорту всіх видів графіків у PNG
    - Графіки, які були експортовані для звіту зберігаються за шляхом "\Data\Outputs\"
@@ -344,8 +333,8 @@ XLSX
 ### MainForm (головна форма)
 - **TabControl з вкладками:**
   1. **Вкладка "Головна"**
-  
-<img width="863" height="485" alt="image-19" src="https://github.com/user-attachments/assets/07332c0a-ed57-467b-999b-ea9574be108c" />
+
+  <img width="840" height="487" alt="image" src="https://github.com/user-attachments/assets/63741274-33a4-4d5d-a213-8354ad3f6568" />
 
   3. **Вкладка "Графіки"**
 
