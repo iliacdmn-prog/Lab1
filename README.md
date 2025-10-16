@@ -331,18 +331,20 @@ XLSX
 **Екрани/форми:**
 
 ### MainForm (головна форма)
+
 - **TabControl з вкладками:**
-  1. **Вкладка "Головна"**
 
-  <img width="840" height="487" alt="image" src="https://github.com/user-attachments/assets/63741274-33a4-4d5d-a213-8354ad3f6568" />
+  - **Вкладка "Головна"**
 
-  3. **Вкладка "Графіки"**
+    <img width="840" height="487" alt="image" src="https://github.com/user-attachments/assets/63741274-33a4-4d5d-a213-8354ad3f6568" />
 
-<img width="863" height="485" alt="image-20" src="https://github.com/user-attachments/assets/4897aed1-14a7-4c54-adc4-071efee4715c" />
+  - **Вкладка "Графіки"**
 
-  5. **Вкладка "Логи"**
-     
-<img width="863" height="485" alt="image-21" src="https://github.com/user-attachments/assets/e1bdd217-fc4d-4c77-84c9-d1124d365c3d" />
+    <img width="863" height="485" alt="image-20" src="https://github.com/user-attachments/assets/4897aed1-14a7-4c54-adc4-071efee4715c" />
+
+  - **Вкладка "Логи"**
+
+    <img width="863" height="485" alt="image-21" src="https://github.com/user-attachments/assets/e1bdd217-fc4d-4c77-84c9-d1124d365c3d" />
 
 ### ImportPreview (попередній перегляд)
 
@@ -396,17 +398,26 @@ XLSX
 
 ## 11. Перевірка продуктивності та надійності
 
-**Обсяг даних:** 150 рядків
+**Обсяг даних:** 5377 рядків
 
 **Час виконання операцій:**
-- Імпорт CSV: < 1 сек
-- Експорт XLSX: < 2 сек
+- Імпорт CSV: ~ 0 сек
+
+  <img width="235" height="133" alt="image" src="https://github.com/user-attachments/assets/5594c7f2-86ab-4756-a67a-1c467986ca9d" />
+
+
+- Експорт XLSX: ~1 сек
+
+  <img width="283" height="133" alt="image" src="https://github.com/user-attachments/assets/276b9991-7284-4ec3-ac0f-7513fbf39a5b" />
+
 - Побудова графіка: миттєво
-- Генерація DOCX-звіту: < 3 сек
+- Генерація DOCX-звіту: ~ 0.1 сек
+
+  <img width="272" height="133" alt="image" src="https://github.com/user-attachments/assets/97bb17af-4e86-49ed-8a43-f732811a2f17" />
+
 
 **Обробка великого файлу:**
-- UI залишається відгукованим
-- Немає прогрес-бару (не потрібно для 150 записів)
+- Інтерфейс може на мить підвисати під час завантаження даних
 
 **Тестові кейси:**
 1. **Некоректний формат:**
