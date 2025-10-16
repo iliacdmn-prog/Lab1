@@ -67,7 +67,9 @@
 - `CityAirQuality` **1..*** → `MonthlyAQI` (одне місто має дані за 12 місяців)
 
 **Діаграма класів:**
+
 <img width="489" height="232" alt="Діаграма класів" src="https://github.com/user-attachments/assets/f372e88d-f468-4bf2-9456-1953b931cd28" />
+
 **Обґрунтування:**
 Обрано таку модель, оскільки датасет логічно розділяється на міста (основні сутності) та їх місячні показники. Зв'язок 1-до-багатьох: кожне місто має рівно 12 місячних записів. Така структура дозволяє легко агрегувати дані, будувати графіки, формувати звіти та читати і записувати данні.
 
@@ -173,7 +175,7 @@
   - Вибір умови (>, <, =, >=, <=, !=)
   - Введення значення
   - Кнопка "Застосувати"
-- **Логіка:** Фільтрація на основі обраних критеріїв, а саме пошук міста або міст за країною та фільтрування на основі AverageIQ фбо Rank.
+- **Логіка:** Фільтрація на основі обраних критеріїв, а саме пошук міста або міст за країною та фільтрування на основі AverageAQI або Rank.
 - **Сортування:** Клік по заголовку стовпця DataGridView. Також сортування відбувається після редагування, видалення або додавання міст, з присвоєнням відповідного Rank за вирахуваним AverageAQI.
 
 **Групування та агрегування:**
@@ -197,7 +199,7 @@
 - **CSV:**
   - Кодування UTF-8
   - Роздільник: кома
-  - Поля у лапках при наявності ком
+  - Є поля видулені лапками
 - **JSON:** 
   - Форматування з відступами
   - UTF-8
@@ -213,21 +215,37 @@
 - Формати можна повторно імпортувати без втрати даних
 - Контрольні приклади:
 CSV
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+
+<img width="1213" height="763" alt="image" src="https://github.com/user-attachments/assets/d1ad175f-c460-4ebc-a37e-8fe1e4207331" />
+
+<img width="713" height="531" alt="image-1" src="https://github.com/user-attachments/assets/e4c35236-f344-45d1-b9c4-f605db40de1d" />
+
+<img width="625" height="748" alt="image-2" src="https://github.com/user-attachments/assets/8efb8a21-7005-4a8b-8321-f3db8fc43898" />
+
 JSON
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+
+<img width="1213" height="763" alt="image-3" src="https://github.com/user-attachments/assets/bc6d394e-40b9-4c4e-8ce2-ca1941317310" />
+
+<img width="713" height="531" alt="image-4" src="https://github.com/user-attachments/assets/21e71336-7465-4518-baf1-c0052bd67c2f" />
+
+<img width="348" height="672" alt="image-5" src="https://github.com/user-attachments/assets/9698a72c-d354-48ba-8aa4-654af75a4783" />
+
 XML
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
+
+<img width="1213" height="763" alt="image-6" src="https://github.com/user-attachments/assets/c1b44aae-5bc4-4c7e-8a2e-5aaeadae002d" />
+
+<img width="713" height="531" alt="image-7" src="https://github.com/user-attachments/assets/797c53bd-31d2-42a6-8e5f-8c86e9c9d6da" />
+
+<img width="662" height="895" alt="image-8" src="https://github.com/user-attachments/assets/c328c756-dfc3-495c-80e6-b4c62ff6b0df" />
+
 XLSX
-![alt text](image-9.png)
-![alt text](image-10.png)
-![alt text](image-11.png)
+
+<img width="1213" height="763" alt="image-9" src="https://github.com/user-attachments/assets/6f71ed1e-a5e8-4db3-9e82-0144dfa1b3a6" />
+
+<img width="713" height="531" alt="image-10" src="https://github.com/user-attachments/assets/449583ce-c344-4079-800c-1ee283cfb7e6" />
+
+<img width="1003" height="705" alt="image-11" src="https://github.com/user-attachments/assets/3d5f4711-cfbb-451c-a4f8-b5f4e310fdf0" />
+
 ---
 
 ## 8. Звіти
@@ -238,10 +256,14 @@ XLSX
 - Таблиця з колонками: City/Country, Average AQI, Min AQI, Max AQI
 - **Умовне форматування:** Top 3 міста за Average AQI виділені кольором
 - **Стилізація:** Сірий фон заголовків, жирний шрифт, авто-ширина стовпців
+
+<img width="422" height="806" alt="image-12" src="https://github.com/user-attachments/assets/551dee79-a07a-4263-8210-1cff30d85100" />
+
 **Аркуш Charts:**
 - Містить кругову діаграму з AverageAQI по містам для кожної країни
-![alt text](image-12.png)
-![alt text](image-13.png)
+
+<img width="951" height="811" alt="image-13" src="https://github.com/user-attachments/assets/587bafe0-a217-4355-8e4b-1c30a49e656e" />
+
 
 ### 8.2 DOCX-звіт
 **Структура:**
@@ -264,8 +286,11 @@ XLSX
    - Діапазон (мін–макс)
    - Топ-5 найзабрудненіших і найчистіших міст.
    - Кількість міст із добрим / поганим повітрям за пороговими значеннями.
-![alt text](image-14.png)
-![alt text](image-15.png)
+
+<img width="694" height="921" alt="image" src="https://github.com/user-attachments/assets/84f92df3-cd01-47dc-ab16-f56d518d92be" />
+
+<img width="692" height="919" alt="image" src="https://github.com/user-attachments/assets/9e09e2f5-be67-4154-8fca-1ea70e93730e" />
+
 
 ## 9. Візуалізація
 
@@ -279,7 +304,8 @@ XLSX
 - **Призначення:** Показати динаміку зміни якості повітря протягом року
 - **Інтерпретація:** Піки вказують на найбільш забруднені місяці
    - Для Rishra, India
-![alt text](image-14.png)
+  
+<img width="802" height="482" alt="image-14" src="https://github.com/user-attachments/assets/777c6c09-5cf8-4fd4-88ce-e6237f32f2fd" />
 
 ### 2. Стовпчикова діаграма (Bar Chart)
 - **Що зображено:** Порівняння місячних AQI для міста
@@ -288,7 +314,8 @@ XLSX
 - **Призначення:** Порівняти рівні забруднення між місяцями
 - **Інтерпретація:** Візуально видно найгірші та найкращі місяці
    - Для Rishra, India
-![alt text](image-15.png)
+
+<img width="802" height="482" alt="image-15" src="https://github.com/user-attachments/assets/653da8eb-260f-4e58-bd3e-485150041c71" />
 
 ### 3. Кругова діаграма (Pie Chart)
 - **Що зображено:** Розподіл середнього AQI між містами однієї країни або країнами з датасету
@@ -296,14 +323,19 @@ XLSX
 - **Призначення:** Показати відносний внесок кожного міста у загальне забруднення країни або всіх країн у загальне забруднення повітря
 - **Інтерпретація:** Найбільші сектори — найбільш забруднені міста
    - Для всіх країн
-![alt text](image-16.png)
+
+<img width="802" height="482" alt="image-16" src="https://github.com/user-attachments/assets/7766cdc1-31f0-49f2-bb47-06499a0b18a0" />
+
    - Для країни China
-![alt text](image-17.png)
+
+<img width="802" height="482" alt="image-17" src="https://github.com/user-attachments/assets/6e9a9790-c0f6-404c-a570-facf75604da5" />
+
 
 **Експорт у PNG:**
    - Є можливість екпорту всіх видів графіків у PNG
    - Графіки, які були експортовані для звіту зберігаються за шляхом "\Data\Outputs\"
-![alt text](image-18.png)
+
+<img width="1571" height="1028" alt="image-18" src="https://github.com/user-attachments/assets/a3151668-21d9-4f4c-bcce-d957174a7189" />
 
 ## 10. Інтерфейс користувача
 
@@ -312,17 +344,24 @@ XLSX
 ### MainForm (головна форма)
 - **TabControl з вкладками:**
   1. **Вкладка "Головна"**
-  ![alt text](image-19.png)
-  2. **Вкладка "Графіки"**
-  ![alt text](image-20.png)
-  3. **Вкладка "Логи"**
-  ![alt text](image-21.png)
+  
+<img width="863" height="485" alt="image-19" src="https://github.com/user-attachments/assets/07332c0a-ed57-467b-999b-ea9574be108c" />
+
+  3. **Вкладка "Графіки"**
+
+<img width="863" height="485" alt="image-20" src="https://github.com/user-attachments/assets/4897aed1-14a7-4c54-adc4-071efee4715c" />
+
+  5. **Вкладка "Логи"**
+     
+<img width="863" height="485" alt="image-21" src="https://github.com/user-attachments/assets/e1bdd217-fc4d-4c77-84c9-d1124d365c3d" />
 
 ### ImportPreview (попередній перегляд)
-   ![alt text](image-22.png)
+
+   <img width="402" height="482" alt="image-22" src="https://github.com/user-attachments/assets/2dd9b662-9873-4525-a1bc-d1959c2e1855" />
 
 ### AddCityForm (додавання міста)
-   ![alt text](image-23.png)
+
+   <img width="237" height="523" alt="image-23" src="https://github.com/user-attachments/assets/6f335fa1-2d29-47b8-9c39-e058137f228b" />
 
 **Сценарії використання:**
 
@@ -350,10 +389,14 @@ XLSX
 
 **Повідомлення про помилки:**
 - Некоректний формат файлу: `"Error reading file"`
-![alt text](image-27.png)
-![alt text](image-25.png)
-![alt text](image-26.png)
-![alt text](image-28.png)
+
+<img width="580" height="88" alt="image-27" src="https://github.com/user-attachments/assets/db437dc6-bf7f-469a-b335-efc99779affa" />
+
+<img width="796" height="474" alt="image-25" src="https://github.com/user-attachments/assets/f2f2972e-4a03-4535-abd6-592ba8120bde" />
+
+<img width="580" height="107" alt="image-26" src="https://github.com/user-attachments/assets/0396a154-bb42-43a1-85e4-3ca21e2f9a10" />
+
+<img width="790" height="469" alt="image-28" src="https://github.com/user-attachments/assets/2405ef65-55ba-4c7f-9bd3-eb9a1e432466" />
 
 **Логи:**
 - **Де зберігаються:** TextBox на вкладці "Логи"
