@@ -440,14 +440,14 @@ XLSX
 
 **Відповідь:** Модель відображає природну структуру датасету: кожне місто (CityAirQuality) має набір місячних показників (MonthlyAQI). Зв'язок 1-до-багатьох дозволяє:
 - Легко агрегувати дані по місяцях (Min/Max/Avg)
-- Будувати графіки за часовим рядом
+- Будувати графіки
 - Масштабувати модель (додати інші метрики)
 
 ### 2. Де реалізовані валідація й агрегування?
 
 **Відповідь:**
-- **Валідація:** У провайдерах (CsvProvider, JsonProvider тощо) через `TryParse` та перевірки
-- **Агрегування:** У `XlsxReportService` через LINQ:
+- **Валідація:** У провайдерах (CsvProvider, JsonProvider тощо)
+- **Агрегування:** У `XlsxReportService`:
   ```csharp
   city.MonthlyData.Min(m => m.Value)
   city.MonthlyData.Max(m => m.Value)
@@ -470,36 +470,21 @@ try {
     // Операція з файлом
 } catch (Exception ex) {
     throw new Exception("Error reading file", ex);
-    // або MessageBox.Show() у UI
 }
 ```
 
 ### 5. Як формується кожен звіт і як оновлюється при фільтрах?
 
 **Відповідь:**
-- **XLSX:** `XlsxReportService.GenerateReport(filteredData)` приймає відфільтровану колекцію
-- **DOCX:** `DocxReportService.GenerateReport(filteredData, chartPath)` приймає дані + шлях до графіка
-- При фільтрації: передається `filteredList` замість повної колекції
+- **XLSX:** `XlsxReportService.GenerateReport(List<CityAirQuality> data, string filePath, string chartPath)` створює .xlsx звіт із даних про якість повітря та діаграми.
+- У першому аркуші “Summary” створюється таблиця з назвами міст, середнім, мінімальним і максимальним значенням AQI. Для перших трьох міст додається червона рамка, заголовок таблиці виділяється сірим фоном і жирним шрифтом, а ширина стовпців автоматично підлаштовується під вміст. Додається умовне форматування для трьох найвищих значень середнього AQI.
+- На другому аркуші “Chart” вставляється діаграма із зазначеного файлу chartPath. Після формування звіт зберігається у вказаний файл filePath.
+- **DOCX:** `DocxReportService.GenerateReport(string outputPath, List<CityAirQuality> data, string chartPath)` створює .docx документ із даних про якість повітря та діаграми.
+- Спочатку створюється документ і додаються заголовок, службова інформація (ПІБ, дата, джерело). Потім формується таблиця з перших 20 міст із полями Rank, City / Country і Average AQI. Вставляється як зображення діаграма. Далі розраховуються статистичні показники (середнє, медіана, мінімум, максимум, топ-5 найчистіших і найзабрудненіших міст) і формуються висновки. Після цього документ зберігається
 
 ---
 
 ## 13. Використання AI
-
-**Які інструменти AI застосовано:** ChatGPT
-
-**Для чого саме:**
-- Довідка з бібліотеками OpenXML та EPPlus
-- Приклади роботи з OxyPlot
-- Структура звітів DOCX/XLSX
-
-**Що змінено/дороблено власноруч:**
-- Адаптація під конкретний датасет Air Quality Index
-- Реалізація фільтрів та агрегацій
-- Налагодження експорту графіків у PNG
-- Інтеграція всіх компонентів у єдину архітектуру
-
-**Підтвердження:** 
-"Усі фрагменти коду у фінальній версії я повністю розумію та можу пояснити на захисті. Кожен рядок коду написаний або адаптований вручну з повним розумінням його функціонування."
 
 ---
 
@@ -510,149 +495,15 @@ try {
 **Що вдалось:**
 - Повна реалізація імпорту/експорту (CSV/JSON/XML/XLSX)
 - Чиста 3-рівнева архітектура з розділенням відповідальностей
-- Професійні звіти з умовним форматуванням та вбудованими графіками
+- Звіти з умовним форматуванням та вбудованими графіками
 - Інтуїтивний інтерфейс з фільтрацією та візуалізацією
+- Можливість перегляду логів та експорту їх
 
 **Що покращити:**
 - Додати прогрес-бар для великих файлів
-- Реалізувати історію "Останні файли"
 - Додати можливість експорту графіків у інші формати (SVG, PDF)
 
 **Ідеї для розвитку:**
 - Інтеграція з API для отримання актуальних даних про якість повітря
 - Додаткові типи візуалізацій (теплові карти, boxplot)
 - Порівняльний аналіз між країнами/регіонами
-- Прогнозування на основі історичних даних
-
----
-
-## 15. Додатки
-
-### A. Фрагменти коду (ключові методи)
-
-**1. Імпорт CSV (CsvProvider.cs):**
-```csharp
-public List<CityAirQuality> Read(string filePath)
-{
-    var cities = new List<CityAirQuality>();
-    using (var parser = new TextFieldParser(filePath))
-    {
-        parser.TextFieldType = FieldType.Delimited;
-        parser.SetDelimiters(",");
-        parser.HasFieldsEnclosedInQuotes = true;
-        
-        while (!parser.EndOfData)
-        {
-            string[] parts = parser.ReadFields();
-            // Валідація та створення CityAirQuality
-            if (int.TryParse(parts[0], out int rank))
-            {
-                var city = new CityAirQuality { 
-                    Rank = rank, 
-                    CityCountry = parts[1],
-                    // ... місячні дані
-                };
-                cities.Add(city);
-            }
-        }
-    }
-    return cities;
-}
-```
-
-**2. Генерація XLSX-звіту (XlsxReportService.cs):**
-```csharp
-public void GenerateReport(List<CityAirQuality> data, string filePath)
-{
-    using (var package = new ExcelPackage())
-    {
-        var ws = package.Workbook.Worksheets.Add("Summary");
-        
-        // Заголовки
-        ws.Cells[1, 1].Value = "City / Country";
-        ws.Cells[1, 2].Value = "Average AQI";
-        ws.Cells[1, 3].Value = "Min AQI";
-        ws.Cells[1, 4].Value = "Max AQI";
-        
-        // Дані з агрегаціями
-        int row = 2;
-        foreach (var city in data)
-        {
-            ws.Cells[row, 1].Value = city.CityCountry;
-            ws.Cells[row, 2].Value = city.AverageAQI;
-            ws.Cells[row, 3].Value = city.MonthlyData.Min(m => m.Value);
-            ws.Cells[row, 4].Value = city.MonthlyData.Max(m => m.Value);
-            row++;
-        }
-        
-        // Умовне форматування Top 3
-        var avgRange = ws.Cells[2, 2, row - 1, 2];
-        avgRange.ConditionalFormatting.AddTop().Rank = 3;
-        
-        File.WriteAllBytes(filePath, package.GetAsByteArray());
-    }
-}
-```
-
-**3. Експорт графіка у PNG:**
-```csharp
-private void buttonChartExport_Click(object sender, EventArgs e)
-{
-    SaveFileDialog sfd = new SaveFileDialog();
-    sfd.Filter = "PNG Image|*.png";
-    
-    if (sfd.ShowDialog() == DialogResult.OK)
-    {
-        plotView1.ExportToPng(sfd.FileName);
-        MessageBox.Show("Графік збережено!");
-    }
-}
-```
-
-### B. Файли звітів
-
-Приклади згенерованих звітів знаходяться у:
-- `/Task2/Task2/bin/Debug/net9.0-windows/AirQuality_Report.xlsx`
-- `/Task2/Task2/bin/Debug/net9.0-windows/AirQuality_Report.docx`
-
-### C. Експортовані приклади
-
-Приклади файлів у різних форматах:
-- `exported_data.csv` — CSV з даними міст
-- `exported_data.json` — JSON серіалізація
-- `exported_data.xml` — XML структура
-- `exported_data.xlsx` — Excel файл
-
-### D. Діаграма класів (UML)
-
-
-### E. Скріни UI
-
-**Головне вікно з даними:**
-- Таблиця DataGridView з містами
-- Панель фільтрів справа
-- Меню "Файл" та "Звіти"
-
-**Вкладка "Графіки":**
-- OxyPlot PlotView
-- Елементи керування: тип графіка, місто, кнопки
-
-**Попередній перегляд (ImportPreview):**
-- Інформація про датасет
-- Перші 5 рядків
-- Статистика пропусків
-
----
-
-## Міні-чек-лист перед здачею
-
-- ✅ Імпорт працює для CSV/JSON/XML/XLSX (з налаштуваннями)
-- ✅ Експорт у всі формати
-- ✅ Мінімум 2–3 сутності + зв'язки; UML-діаграма додана
-- ✅ Є фільтри, групування, агрегати
-- ✅ Є ≥2 графіки + PNG-експорт (Line, Bar, Pie)
-- ✅ Звіти XLSX і DOCX згенеровано та додано
-- ✅ Архітектура у 3 збірках (Domain/Data/UI), код розділений за відповідальністю
-- ✅ Обробка помилок/логи продемонстровані
-- ✅ Розділ "Використання AI" заповнено
-- ✅ Висновки оформлені
